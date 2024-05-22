@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+:root {
+  --gradient-bg: linear-gradient(90deg, #f87516 0%, #5e11ff 50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Outfit", "Sora";
+}
+body {
+  background-color: #0e0f1a;
+}
+.body-scrollable {
+  height: calc(100vh - 54px);
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header CSS */
+
+/* Hero CSS */
+.purchaseButton:hover {
+  border: 1px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.gradientText {
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reviewsAndScore {
   color: white;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.gradBg {
+  background: var(--gradient-bg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Section CSS */
+.imgCard {
+  border: 1px 0 1px 1px solid rgb(76, 74, 74);
+  border-radius: 19px;
+  padding-left: 30px;
+  padding-top: 40px;
+  height: 600px;
+  width: 600px;
+  background: linear-gradient(#0e0720 0%, #211a31 100%);
+}
+
+/* Support CSS */
+.gradientBg {
+  background: linear-gradient(#0e0720 0%, #211a31 100%);
+  border: 1px solid rgb(76, 74, 74);
+  border-radius: 19px;
+}
+
+.card1 {
+  background: linear-gradient(#0e0720 0%, #211a31 100%);
+  border: 1px solid rgb(76, 74, 74);
+  border-radius: 19px;
+  width: 420px;
 }
